@@ -1,4 +1,4 @@
-package com.example.tnj.Controller;
+package com.example.tnj.controller;
 
 import mybatis.dao.AccomMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +35,7 @@ public class AccomController {
             model.addAttribute("searchString", search);
         }
         return "search";
+
     }
 
     @GetMapping("/search")
@@ -42,6 +43,6 @@ public class AccomController {
         model.addAttribute("search", accomMapper.searchAccomList(search));
         model.addAttribute("searchString", search);
         return "search";
-        }
+    }
 
 }

@@ -44,7 +44,7 @@ public interface PaymentMapper {
     @Select(" SELECT  p.payDate AS payDate, p.accomNum AS accomNum, " +
             "         p.amount AS amount, p.impUid AS impUid, " +
             "         r.chkin_Date AS chkin_Date, r.chkout_Date AS chkout_Date, " +
-            "         r.adultCnt AS adultCnt, r.kidCnt AS kidCnt, r.id , r.resNum AS resNum , " +
+            "         r.adultCnt AS adultCnt, r.kidCnt AS kidCnt, p.id AS id , r.resNum AS resNum , " +
             "         a.accName AS accName, a.postCode AS postCode, " +
             "         a.address AS address, a.detailAddress AS detailAddress, " +
             "         a.accCall AS accCall, a.price AS price, a.chkin_Time AS chkin_Time, " +
